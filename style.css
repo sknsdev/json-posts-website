@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color--active: #a47312;
+  --text-color--focus_hover: #cc9933;
+  --text-color--light: #e9c479;
+  --text-color--regular: #666666;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background: whitesmoke;
+}
+ul {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+
+.site-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*content*/
+
+.posts-list {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-post-container {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 700px;
+  border: 1px solid #cccccc;
+  margin-bottom: 5px;
+}
+
+.post-container_left {
+  display: block;
+}
+
+.left-userid {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+.post-container_right {
+  width: 600px;
+}
+
+/*Buttons*/
+
+.btn {
+  padding: 0;
+  cursor: pointer;
+  border: 1px solid var(--text-color--focus_hover);
+  box-sizing: border-box;
+  border-radius: 60px;
+  background-color: #fff;
+  color: var(--text-color--focus_hover);
+  transition-property: background, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+.search-btn {
+  padding: 20px 30px;
+}
+
+.backward-btn, .forward-btn {
+  padding: 30px 100px;
+}
+
+/*btn animation*/
+
+.btn:focus {
+  background: var(--text-color--focus_hover);
+  color: #ffffff;
+}
+
+.btn:hover {
+  background: var(--text-color--focus_hover);
+  color: #ffffff;
+}
+
+.btn:active {
+  background: var(--text-color--active);
+  color: #ffffff;
+}
+
+/*btn container*/
+
+.btn-container {
+  justify-content: space-around;
+}
+
+/*search*/
+.header-search {
+  width: 700px;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+}
